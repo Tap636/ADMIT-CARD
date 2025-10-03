@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.form {
+  margin: 20px 0;
+}
+
+.admit-card {
+  border: 1px solid black;
+  width: 18cm;
+  height: 8.5cm;
+  margin: 20px auto;
+  padding: 1cm;
+  page-break-inside: avoid;
+}
+
+.admit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admit-header img {
+  height: 60px;
+}
+
+.signature {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.signature img {
+  height: 60px;
+  transform: rotate(-90deg);
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .admit-card {
+    page-break-inside: avoid;
+  }
+}
