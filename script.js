@@ -43,7 +43,11 @@ function renderCards() {
     card.innerHTML = `
       <div class="admit-header">
         <img src="logo.png" alt="logo">
-        <h3>NANDI GURUKUL VIDYA MANDIR <br> HALF YEARLY EXAM 2025-26 <br> ADMIT CARD</h3>
+        <h3>
+          NANDI GURUKUL VIDYA MANDIR <br>
+          HALF YEARLY EXAMINATION 2025-26 <br>
+          ADMIT CARD
+        </h3>
       </div>
       <div class="details">
         <p><b>Student Id:</b> ${s.id}</p>
