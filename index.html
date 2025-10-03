@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admit Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Admit Card Generator</h1>
+
+  <!-- Upload Excel -->
+  <input type="file" id="excelFile" accept=".xlsx,.xls">
+  <button onclick="printAdmitCards()">Print PDF</button>
+
+  <!-- Manual Entry -->
+  <div class="form">
+    <input type="text" id="id" placeholder="Student ID">
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="text" id="class" placeholder="Class">
+    <input type="text" id="father" placeholder="Father's Name">
+    <button onclick="addManual()">Add Student</button>
+  </div>
+
+  <!-- Admit Card Container -->
+  <div id="cards"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
