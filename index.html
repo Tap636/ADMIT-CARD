@@ -6,19 +6,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Admit Card Generator</h1>
+  <div id="controls">
+    <h1>Admit Card Generator</h1>
+    <input type="file" id="excelFile" accept=".xlsx,.xls">
+    <button onclick="printAdmitCards()">Print PDF</button>
 
-  <!-- Upload Excel -->
-  <input type="file" id="excelFile" accept=".xlsx,.xls">
-  <button onclick="printAdmitCards()">Print PDF</button>
-
-  <!-- Manual Entry -->
-  <div class="form">
-    <input type="text" id="id" placeholder="Student ID">
-    <input type="text" id="name" placeholder="Student Name">
-    <input type="text" id="class" placeholder="Class">
-    <input type="text" id="father" placeholder="Father's Name">
-    <button onclick="addManual()">Add Student</button>
+    <div class="form">
+      <input type="text" id="id" placeholder="Student ID">
+      <input type="text" id="name" placeholder="Student Name">
+      <input type="text" id="class" placeholder="Class">
+      <input type="text" id="father" placeholder="Father's Name">
+      <button onclick="addManual()">Add Student</button>
+    </div>
   </div>
 
   <!-- Admit Card Container -->
